@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.i3 {
+  background-image: url("img/concepts-background-i3.png");
+}
+
+body.i4 {
+  background-image: url("img/concepts-background-i4.png");
+}
+
+body.i5 {
+  background-image: url("img/concepts-background-i5.png");
+}
