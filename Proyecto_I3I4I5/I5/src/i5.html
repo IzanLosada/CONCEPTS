@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I5 - SELECT THE COLOR</title>
+    <link rel="icon" type="image/png" href="../../menu/img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="ribbon-wrap">
+            <h1 class="ribbon">LEVEL I5</h1>
+        </div>
+        <hr class="line">
+
+        <div class="actions">
+            <button class="btn btn-sound" id="sound" aria-label="Listen to the color">🔊</button>
+            <a class="btn btn-back" href="../../menu/src/index.html">BACK ←</a>
+        </div>
+    </header>
+
+    <main class="game">
+        <p class="word" id="word">RED</p>
+
+        <div class="colors">
+            <button class="color" data-color="RED"    style="--c: #e53935" aria-label="Red"></button>
+            <button class="color" data-color="ORANGE" style="--c: #fb8c00" aria-label="Orange"></button>
+            <button class="color" data-color="YELLOW" style="--c: #fdd835" aria-label="Yellow"></button>
+            <button class="color" data-color="GREEN"  style="--c: #43a047" aria-label="Green"></button>
+            <button class="color" data-color="BLUE"   style="--c: #1e88e5" aria-label="Blue"></button>
+            <button class="color" data-color="PURPLE" style="--c: #8e24aa" aria-label="Purple"></button>
+        </div>
+
+        <div class="progress" id="progress">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </main>
+
+</body>
+</html>
