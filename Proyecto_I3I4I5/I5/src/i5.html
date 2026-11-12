@@ -26,18 +26,20 @@
     </header>
 
     <main class="game">
-        <p class="word" id="word">RED</p>
+        <button class="word" id="word" aria-label="Listen to the word">RED</button>
 
-        <div class="colors">
-            <button class="color" data-color="RED"    style="--c: #e53935" aria-label="Red"></button>
-            <button class="color" data-color="ORANGE" style="--c: #fb8c00" aria-label="Orange"></button>
-            <button class="color" data-color="YELLOW" style="--c: #fdd835" aria-label="Yellow"></button>
-            <button class="color" data-color="GREEN"  style="--c: #43a047" aria-label="Green"></button>
-            <button class="color" data-color="BLUE"   style="--c: #1e88e5" aria-label="Blue"></button>
-            <button class="color" data-color="PURPLE" style="--c: #8e24aa" aria-label="Purple"></button>
+        <p class="message" id="message" aria-live="polite"></p>
+
+        <div class="colors" id="colors">
+            <button class="color" data-color="RED"    style="--c: var(--red)"    aria-label="Red"></button>
+            <button class="color" data-color="ORANGE" style="--c: var(--orange)" aria-label="Orange"></button>
+            <button class="color" data-color="YELLOW" style="--c: var(--yellow)" aria-label="Yellow"></button>
+            <button class="color" data-color="GREEN"  style="--c: var(--green)"  aria-label="Green"></button>
+            <button class="color" data-color="BLUE"   style="--c: var(--blue)"   aria-label="Blue"></button>
+            <button class="color" data-color="PURPLE" style="--c: var(--purple)" aria-label="Purple"></button>
         </div>
 
-        <div class="progress" id="progress">
+        <div class="progress" id="progress" aria-label="Completed colors">
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -45,6 +47,8 @@
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
+
+        <button class="btn btn-ok" id="play-again" hidden>PLAY AGAIN</button>
     </main>
 
     <!-- TUTORIAL -->
