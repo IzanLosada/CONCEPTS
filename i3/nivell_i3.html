@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I3 - YOUR FAVOURITE COLOUR</title>
+    <link rel="icon" type="image/png" href="../menu/img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="ribbon-wrap">
+            <h1 class="ribbon">LEVEL I3</h1>
+        </div>
+        <p class="question">WHAT IS YOUR FAVOURITE COLOUR?</p>
+
+        <div class="actions">
+            <button class="btn btn-help" id="help" aria-label="How to play">?</button>
+
+            <button class="btn btn-sound" id="sound" aria-label="Sound">
+                <img id="sound-img" src="img/sound_on.svg" alt="">
+            </button>
+            <a class="btn btn-back" href="../menu/src/index.html">BACK ←</a>
+        </div>
+    </header>
+
+    <main class="game">
+        <div class="colors">
+            <button class="color" data-color="RED"    data-hex="#ee1b24" aria-label="Red"><img src="img/colors/red.svg" alt="" draggable="false"></button>
+            <button class="color" data-color="ORANGE" data-hex="#f7941d" aria-label="Orange"><img src="img/colors/orange.svg" alt="" draggable="false"></button>
+            <button class="color" data-color="YELLOW" data-hex="#fef102" aria-label="Yellow"><img src="img/colors/yellow.svg" alt="" draggable="false"></button>
+            <button class="color" data-color="GREEN"  data-hex="#8fc646" aria-label="Green"><img src="img/colors/green.svg" alt="" draggable="false"></button>
+            <button class="color" data-color="BLUE"   data-hex="#0072bc" aria-label="Blue"><img src="img/colors/blue.svg" alt="" draggable="false"></button>
+            <button class="color" data-color="PURPLE" data-hex="#8f288d" aria-label="Purple"><img src="img/colors/purple.svg" alt="" draggable="false"></button>
+        </div>
+
+        <div class="box" id="box">
+            <img class="box-img" src="img/box.svg" alt="Box of colours">
+            <img class="picked" id="picked" src="" alt="" hidden>
+
+            <p class="answer" id="answer" hidden>
+                <img src="img/sound_on.svg" alt="">
+                <span id="answer-word"></span>
+            </p>
+        </div>
+    </main>
+
+    <!-- TUTORIAL -->
+    <dialog class="tutorial" id="tutorial" aria-labelledby="tutorial-title">
+        <div class="ribbon-wrap">
+            <h2 class="ribbon ribbon-small" id="tutorial-title">HOW TO PLAY</h2>
+        </div>
+
+        <ol class="steps">
+            <li class="step">
+                <img src="img/tutorial/step1.svg" alt="">
+                <p>LOOK at the colours.</p>
+            </li>
+            <li class="step">
+                <img src="img/tutorial/step2.svg" alt="">
+                <p>CHOOSE your favourite.</p>
+            </li>
+            <li class="step">
+                <img src="img/tutorial/step3.svg" alt="">
+                <p>DRAG it to the BOX!</p>
+            </li>
+            <li class="step">
+                <img src="img/tutorial/step4.svg" alt="">
+                <p>LISTEN to its name.</p>
+            </li>
+        </ol>
+
+        <button class="btn btn-ok" id="tutorial-close">OK, LET'S PLAY!</button>
+    </dialog>
+
+    <script src="i3.js"></script>
+</body>
+</html>
