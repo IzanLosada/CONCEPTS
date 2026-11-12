@@ -16,7 +16,11 @@
         <hr class="line">
 
         <div class="actions">
-            <button class="btn btn-sound" id="sound" aria-label="Listen to the color">🔊</button>
+            <button class="btn btn-help" id="help" aria-label="How to play">?</button>
+
+            <button class="btn btn-sound" id="sound" aria-label="Sound">
+                <img id="sound-img" src="../img/sound_on.svg" alt="">
+            </button>
             <a class="btn btn-back" href="../../menu/src/index.html">BACK ←</a>
         </div>
     </header>
@@ -43,5 +47,38 @@
         </div>
     </main>
 
+    <!-- TUTORIAL -->
+    <dialog class="tutorial" id="tutorial" aria-labelledby="tutorial-title">
+        <div class="ribbon-wrap">
+            <h2 class="ribbon ribbon-small" id="tutorial-title">HOW TO PLAY</h2>
+        </div>
+
+        <ol class="steps">
+            <li class="step">
+                <img src="../img/tutorial/step1.svg" alt="">
+                <p>LOOK at the word.</p>
+            </li>
+            <li class="step">
+                <img src="../img/tutorial/step2.svg" alt="">
+                <p>PRESS to LISTEN.</p>
+            </li>
+            <li class="step">
+                <img src="../img/tutorial/step3.svg" alt="">
+                <p>TAP the color.</p>
+            </li>
+            <li class="step">
+                <img src="../img/tutorial/step4.svg" alt="">
+                <p>YES? Good! NO? Try again!</p>
+            </li>
+            <li class="step">
+                <img src="../img/tutorial/step5.svg" alt="">
+                <p>6 dots = YOU WIN!</p>
+            </li>
+        </ol>
+
+        <button class="btn btn-ok" id="tutorial-close">OK, LET'S PLAY!</button>
+    </dialog>
+
+    <script src="i5.js"></script>
 </body>
 </html>

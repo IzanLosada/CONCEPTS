@@ -11,7 +11,6 @@
 }
 
 body {
-    min-height: 100vh;
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -22,8 +21,6 @@ body {
     overflow: hidden;
 }
 
-/* ---------- Cabecera ---------- */
-
 .header {
     position: relative;
     padding-top: 24px;
@@ -33,7 +30,6 @@ body {
 }
 
 .ribbon-wrap {
-    /* contorno oscuro alrededor de la cinta */
     filter: drop-shadow(3px 0 0 var(--dark)) drop-shadow(-3px 0 0 var(--dark))
             drop-shadow(0 3px 0 var(--dark)) drop-shadow(0 -3px 0 var(--dark));
 }
@@ -86,7 +82,75 @@ body {
     padding: 0;
 }
 
-/* ---------- Juego ---------- */
+.btn-help {
+    padding: 0;
+    font-size: 44px;
+    background: #fdd835;
+}
+
+.btn-sound img {
+    width: 46px;
+    height: 46px;
+}
+
+/* ===== TUTORIAL ===== */
+.tutorial {
+    margin: auto;
+    width: min(1200px, 94vw);
+    max-height: 92dvh;
+    padding: 30px clamp(16px, 3vw, 40px) 34px;
+    border: 5px solid var(--dark);
+    border-radius: 26px;
+    box-shadow: 0 10px 0 var(--dark);
+    background: var(--white);
+    color: var(--dark);
+    font-family: 'Arial Black', Arial, sans-serif;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.tutorial[open] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.tutorial::backdrop {
+    background: rgba(30, 27, 51, 0.65);
+}
+
+.ribbon-small {
+    font-size: clamp(24px, 3vw, 40px);
+    padding: 6px 60px;
+}
+
+.steps {
+    list-style: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font-size: clamp(18px, 1.6vw, 22px);
+}
+
+.step img {
+    width: 100%;
+}
+
+.btn-ok {
+    background: #43a047;
+    color: var(--white);
+    font-size: clamp(22px, 2.4vw, 30px);
+    padding: 0 40px;
+}
 
 .game {
     flex: 1;
